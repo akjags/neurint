@@ -63,6 +63,6 @@ if __name__ == '__main__':
     input_image_dir='/home/gru/akshay/textures/input'
     for i in range(5):
         print(f'--- Synthesizing sample {i+1} ---')
-        outputs = run_neural_interpolation('rocks', 'leaves', uid=f's{i+1}', num_steps=5000, input_image_dir = input_image_dir, 
+        outputs = run_neural_interpolation('horse', 'cat', uid=f's{i+1}', num_steps=5000, input_image_dir = input_image_dir, 
                                            loss_func = NeuralInterpolation_Loss, layer=args.layer, area=args.area);
         
